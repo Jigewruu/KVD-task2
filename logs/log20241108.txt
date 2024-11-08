@@ -1,0 +1,603 @@
+2024-11-08 08:00:32.952 +08:00 [ERR] Failed executing DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [ASEANAPOL];
+2024-11-08 08:01:13.633 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-11-08 08:01:13.664 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-11-08 08:01:13.669 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-11-08 08:01:13.714 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-11-08 08:01:13.719 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-11-08 08:01:13.725 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-11-08 08:01:13.733 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-11-08 08:01:13.740 +08:00 [INF] Applying migration '20241107161520_InitialCreate'.
+2024-11-08 08:01:13.758 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [Grade] nvarchar(max) NOT NULL,
+    [GPA] float NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [IsDeleted] bit NOT NULL,
+    [DeletedAt] datetime2 NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+);
+2024-11-08 08:01:13.765 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241107161520_InitialCreate', N'8.0.10');
+2024-11-08 08:14:40.378 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:14:40.538 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:14:40.539 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:14:40.541 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:14:40.541 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:14:40.542 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:14:41.212 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:14:41.290 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:14:41.310 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:14:41.317 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:14:41.392 +08:00 [INF] Executed ViewResult - view Index executed in 77.5202ms.
+2024-11-08 08:14:41.395 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 83.3269ms
+2024-11-08 08:14:41.398 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:14:41.400 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-11-08 08:14:41.401 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/jquery/dist/jquery.min.js - null null
+2024-11-08 08:14:41.405 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-11-08 08:14:41.400 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2024-11-08 08:14:41.401 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/MyProject.styles.css?v=RueL2EZblq2atLJYl7Ylswve37h67wuI4r5N_66qFNw - null null
+2024-11-08 08:14:41.405 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 192.581ms
+2024-11-08 08:14:41.406 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2024-11-08 08:14:41.432 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:14:41.439 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:14:41.461 +08:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\js\site.js'
+2024-11-08 08:14:41.464 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2024-11-08 08:14:41.465 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2024-11-08 08:14:41.461 +08:00 [INF] Sending file. Request path: '/MyProject.styles.css'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\obj\Debug\net8.0\scopedcss\bundle\MyProject.styles.css'
+2024-11-08 08:14:41.461 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\css\site.css'
+2024-11-08 08:14:41.466 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 65.7691ms
+2024-11-08 08:14:41.466 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 59.6374ms
+2024-11-08 08:14:41.468 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 62.0636ms
+2024-11-08 08:14:41.472 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/MyProject.styles.css?v=RueL2EZblq2atLJYl7Ylswve37h67wuI4r5N_66qFNw - 200 1127 text/css 71.1863ms
+2024-11-08 08:14:41.480 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 79.1194ms
+2024-11-08 08:14:41.465 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 33.7682ms
+2024-11-08 08:14:41.514 +08:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\lib\jquery\dist\jquery.min.js'
+2024-11-08 08:14:41.515 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.0309ms
+2024-11-08 08:14:41.515 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 114.6466ms
+2024-11-08 08:14:41.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/favicon.ico - null null
+2024-11-08 08:14:41.540 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\favicon.ico'
+2024-11-08 08:14:41.541 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/favicon.ico - 200 5430 image/x-icon 8.364ms
+2024-11-08 08:14:49.583 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/students - null null
+2024-11-08 08:14:49.591 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:14:49.594 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:14:50.149 +08:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:14:50.162 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:14:50.169 +08:00 [INF] Executed ViewResult - view Index executed in 7.831ms.
+2024-11-08 08:14:50.172 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 576.4607ms
+2024-11-08 08:14:50.174 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:14:50.177 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/students - 200 null text/html; charset=utf-8 593.8936ms
+2024-11-08 08:14:50.179 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:14:50.180 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:14:50.186 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 5.9322ms
+2024-11-08 08:14:50.189 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.9213ms
+2024-11-08 08:14:54.006 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:14:54.010 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:14:54.011 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:14:54.013 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:14:54.044 +08:00 [INF] Executed ViewResult - view Create executed in 31.107ms.
+2024-11-08 08:14:54.046 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 33.6282ms
+2024-11-08 08:14:54.047 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:14:54.048 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 42.8953ms
+2024-11-08 08:14:54.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2024-11-08 08:14:54.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:14:54.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2024-11-08 08:14:54.050 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:14:54.055 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 5.4403ms
+2024-11-08 08:14:54.065 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.754ms
+2024-11-08 08:14:54.079 +08:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2024-11-08 08:14:54.081 +08:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2024-11-08 08:14:54.081 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 200 5824 text/javascript 31.7077ms
+2024-11-08 08:14:54.082 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/lib/jquery-validation/dist/jquery.validate.min.js - 200 24601 text/javascript 32.5505ms
+2024-11-08 08:15:31.779 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7106/Students/Create - application/x-www-form-urlencoded 361
+2024-11-08 08:15:31.785 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:15:31.791 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyProject.Models.Student) on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:15:31.913 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Double), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [CreatedAt], [DeletedAt], [GPA], [Grade], [IsDeleted], [Name], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-11-08 08:15:31.926 +08:00 [INF] Executing RedirectResult, redirecting to /Students.
+2024-11-08 08:15:31.927 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 133.9501ms
+2024-11-08 08:15:31.928 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:15:31.929 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7106/Students/Create - 302 0 null 149.5434ms
+2024-11-08 08:15:31.970 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students - null null
+2024-11-08 08:15:31.973 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:15:31.974 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:15:32.010 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:15:32.015 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:15:32.024 +08:00 [INF] Executed ViewResult - view Index executed in 8.862ms.
+2024-11-08 08:15:32.025 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 50.2859ms
+2024-11-08 08:15:32.027 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:15:32.028 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students - 200 null text/html; charset=utf-8 57.7872ms
+2024-11-08 08:15:32.033 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:15:32.033 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:15:32.034 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 1.8538ms
+2024-11-08 08:15:32.044 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.7595ms
+2024-11-08 08:15:38.728 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Delete/1 - null null
+2024-11-08 08:15:38.732 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Delete (MyProject)'
+2024-11-08 08:15:38.734 +08:00 [INF] Route matched with {action = "Delete", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Nullable`1[System.Int32]) on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:15:38.757 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[Id] = @__id_0
+2024-11-08 08:15:38.759 +08:00 [INF] Executing ViewResult, running view Delete.
+2024-11-08 08:15:38.765 +08:00 [INF] Executed ViewResult - view Delete executed in 5.7364ms.
+2024-11-08 08:15:38.766 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Delete (MyProject) in 30.6334ms
+2024-11-08 08:15:38.768 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Delete (MyProject)'
+2024-11-08 08:15:38.769 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Delete/1 - 200 null text/html; charset=utf-8 41.2332ms
+2024-11-08 08:15:38.773 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:15:38.774 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:15:38.777 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 3.4691ms
+2024-11-08 08:15:38.783 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.4933ms
+2024-11-08 08:15:40.477 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7106/Students/Delete/1 - application/x-www-form-urlencoded 187
+2024-11-08 08:15:40.479 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.DeleteConfirmed (MyProject)'
+2024-11-08 08:15:40.482 +08:00 [INF] Route matched with {action = "Delete", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteConfirmed(Int32) on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:15:40.505 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[Id] = @__p_0
+2024-11-08 08:15:40.517 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Double), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [Age] = @p0, [CreatedAt] = @p1, [DeletedAt] = @p2, [GPA] = @p3, [Grade] = @p4, [IsDeleted] = @p5, [Name] = @p6, [UpdatedAt] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2024-11-08 08:15:40.520 +08:00 [INF] Executing RedirectResult, redirecting to /Students.
+2024-11-08 08:15:40.520 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.DeleteConfirmed (MyProject) in 36.9488ms
+2024-11-08 08:15:40.521 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.DeleteConfirmed (MyProject)'
+2024-11-08 08:15:40.521 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7106/Students/Delete/1 - 302 0 null 44.9849ms
+2024-11-08 08:15:40.523 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students - null null
+2024-11-08 08:15:40.526 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:15:40.527 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:15:40.536 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:15:40.538 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:15:40.540 +08:00 [INF] Executed ViewResult - view Index executed in 1.9291ms.
+2024-11-08 08:15:40.541 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 12.11ms
+2024-11-08 08:15:40.541 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:15:40.542 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students - 200 null text/html; charset=utf-8 18.475ms
+2024-11-08 08:15:40.547 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:15:40.547 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:15:40.549 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.2707ms
+2024-11-08 08:15:40.557 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.1833ms
+2024-11-08 08:22:56.776 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-11-08 08:22:56.805 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-11-08 08:22:56.810 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-11-08 08:22:56.814 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-11-08 08:22:56.826 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-11-08 08:22:56.833 +08:00 [INF] No migrations were applied. The database is already up to date.
+2024-11-08 08:23:03.908 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:23:04.020 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:23:04.020 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:23:04.022 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:23:04.023 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:23:04.023 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:23:04.330 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:23:04.387 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:23:04.404 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:23:04.410 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:23:04.445 +08:00 [INF] Executed ViewResult - view Index executed in 37.8067ms.
+2024-11-08 08:23:04.449 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 43.9158ms
+2024-11-08 08:23:04.450 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:23:04.453 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 125.3332ms
+2024-11-08 08:23:04.456 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:23:04.456 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:23:04.467 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 11.5892ms
+2024-11-08 08:23:04.483 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.132ms
+2024-11-08 08:23:09.762 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/students - null null
+2024-11-08 08:23:09.768 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:23:09.772 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:23:10.291 +08:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:23:10.304 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:23:10.312 +08:00 [INF] Executed ViewResult - view Index executed in 8.5009ms.
+2024-11-08 08:23:10.315 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 541.411ms
+2024-11-08 08:23:10.317 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:23:10.320 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:23:10.321 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:23:10.321 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/students - 200 null text/html; charset=utf-8 559.0758ms
+2024-11-08 08:23:10.324 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 3.3539ms
+2024-11-08 08:23:10.335 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.1115ms
+2024-11-08 08:23:12.489 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:23:12.496 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:23:12.499 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:23:12.503 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:23:12.563 +08:00 [INF] Executed ViewResult - view Create executed in 61.6166ms.
+2024-11-08 08:23:12.567 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 66.1277ms
+2024-11-08 08:23:12.567 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:23:12.568 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:23:12.571 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 3.3735ms
+2024-11-08 08:23:12.568 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:23:12.578 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 89.1083ms
+2024-11-08 08:23:12.580 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.4317ms
+2024-11-08 08:25:25.973 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:25:26.075 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:25:26.077 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:25:26.078 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:25:26.079 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:25:26.080 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:25:26.406 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:25:26.463 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:25:26.480 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:25:26.487 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:25:26.527 +08:00 [INF] Executed ViewResult - view Index executed in 42.6437ms.
+2024-11-08 08:25:26.530 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 47.8917ms
+2024-11-08 08:25:26.530 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:25:26.534 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 130.1203ms
+2024-11-08 08:25:26.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:25:26.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:25:26.543 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 6.8727ms
+2024-11-08 08:25:26.560 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.6427ms
+2024-11-08 08:25:32.022 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/students - null null
+2024-11-08 08:25:32.028 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:25:32.031 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:25:32.551 +08:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:25:32.564 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:25:32.572 +08:00 [INF] Executed ViewResult - view Index executed in 8.7849ms.
+2024-11-08 08:25:32.574 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 541.0842ms
+2024-11-08 08:25:32.576 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:25:32.580 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/students - 200 null text/html; charset=utf-8 558.4066ms
+2024-11-08 08:25:32.582 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:25:32.583 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:25:32.587 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 4.0702ms
+2024-11-08 08:25:32.593 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.9924ms
+2024-11-08 08:25:33.897 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:25:33.905 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:25:33.907 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:25:33.911 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:25:33.968 +08:00 [INF] Executed ViewResult - view Create executed in 57.5148ms.
+2024-11-08 08:25:33.970 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:25:33.970 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 61.3574ms
+2024-11-08 08:25:33.971 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:25:33.972 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.4542ms
+2024-11-08 08:25:33.973 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:25:33.980 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 83.3818ms
+2024-11-08 08:25:33.983 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.0385ms
+2024-11-08 08:25:53.612 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:25:53.726 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:25:53.726 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:25:53.728 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:25:53.729 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:25:53.730 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:25:54.079 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:25:54.137 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:25:54.157 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:25:54.164 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:25:54.203 +08:00 [INF] Executed ViewResult - view Index executed in 41.1101ms.
+2024-11-08 08:25:54.206 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 46.8899ms
+2024-11-08 08:25:54.207 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:25:54.210 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 132.0959ms
+2024-11-08 08:25:54.212 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:25:54.212 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:25:54.219 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 6.9025ms
+2024-11-08 08:25:54.243 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.4139ms
+2024-11-08 08:26:02.848 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/students - null null
+2024-11-08 08:26:02.854 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:02.858 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:26:03.826 +08:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:26:03.851 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:26:03.868 +08:00 [INF] Executed ViewResult - view Index executed in 18.5883ms.
+2024-11-08 08:26:03.872 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 1010.8264ms
+2024-11-08 08:26:03.874 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:03.878 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:26:03.879 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:26:03.881 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/students - 200 null text/html; charset=utf-8 1033.4614ms
+2024-11-08 08:26:03.881 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.6065ms
+2024-11-08 08:26:03.893 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.067ms
+2024-11-08 08:26:05.084 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:26:05.091 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:26:05.093 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:26:05.096 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:26:05.139 +08:00 [INF] Executed ViewResult - view Create executed in 43.7358ms.
+2024-11-08 08:26:05.142 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 47.1823ms
+2024-11-08 08:26:05.143 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:26:05.143 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:26:05.143 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:26:05.145 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.5233ms
+2024-11-08 08:26:05.146 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 61.7337ms
+2024-11-08 08:26:05.157 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.6079ms
+2024-11-08 08:26:11.530 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7106/Students/Create - application/x-www-form-urlencoded 231
+2024-11-08 08:26:11.539 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:26:11.550 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyProject.Models.Student) on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:26:11.761 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Double), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [CreatedAt], [DeletedAt], [GPA], [Grade], [IsDeleted], [Name], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-11-08 08:26:11.789 +08:00 [INF] Executing RedirectResult, redirecting to /Students.
+2024-11-08 08:26:11.791 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 237.9534ms
+2024-11-08 08:26:11.792 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:26:11.793 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7106/Students/Create - 302 0 null 263.1409ms
+2024-11-08 08:26:11.795 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students - null null
+2024-11-08 08:26:11.799 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:11.800 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:26:11.860 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:26:11.867 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:26:11.889 +08:00 [INF] Executed ViewResult - view Index executed in 22.2291ms.
+2024-11-08 08:26:11.891 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 89.3696ms
+2024-11-08 08:26:11.892 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:11.893 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students - 200 null text/html; charset=utf-8 97.8254ms
+2024-11-08 08:26:11.896 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:26:11.897 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:26:11.898 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.148ms
+2024-11-08 08:26:11.906 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.9264ms
+2024-11-08 08:26:41.139 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:26:41.249 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:26:41.250 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:26:41.252 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:26:41.252 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:26:41.253 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:26:41.573 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:26:41.632 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:26:41.651 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:26:41.659 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:26:41.704 +08:00 [INF] Executed ViewResult - view Index executed in 47.444ms.
+2024-11-08 08:26:41.706 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 52.5677ms
+2024-11-08 08:26:41.707 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:26:41.710 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 139.4109ms
+2024-11-08 08:26:41.714 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:26:41.714 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:26:41.721 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 7.0961ms
+2024-11-08 08:26:41.743 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.8745ms
+2024-11-08 08:26:47.891 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/students - null null
+2024-11-08 08:26:47.898 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:47.902 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:26:48.651 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:26:48.720 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:26:48.757 +08:00 [INF] Executed ViewResult - view Index executed in 37.8113ms.
+2024-11-08 08:26:48.759 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 855.7075ms
+2024-11-08 08:26:48.760 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:26:48.761 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:48.763 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:26:48.763 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 3.1245ms
+2024-11-08 08:26:48.773 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/students - 200 null text/html; charset=utf-8 881.3623ms
+2024-11-08 08:26:48.781 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0629ms
+2024-11-08 08:26:53.040 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/students - null null
+2024-11-08 08:26:53.044 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:53.045 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:26:53.069 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:26:53.072 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:26:53.079 +08:00 [INF] Executed ViewResult - view Index executed in 7.0467ms.
+2024-11-08 08:26:53.081 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 33.985ms
+2024-11-08 08:26:53.082 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:26:53.084 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/students - 200 null text/html; charset=utf-8 44.3342ms
+2024-11-08 08:26:53.086 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:26:53.087 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:26:53.090 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 4.192ms
+2024-11-08 08:26:53.097 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.6927ms
+2024-11-08 08:26:58.539 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:26:58.545 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:26:58.547 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:26:58.551 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:26:58.588 +08:00 [INF] Executed ViewResult - view Create executed in 37.0154ms.
+2024-11-08 08:26:58.589 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 39.5036ms
+2024-11-08 08:26:58.590 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:26:58.591 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 52.4063ms
+2024-11-08 08:26:58.595 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:26:58.595 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:26:58.597 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.326ms
+2024-11-08 08:26:58.605 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.2215ms
+2024-11-08 08:27:18.604 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7106/Students/Create - application/x-www-form-urlencoded 233
+2024-11-08 08:27:18.615 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:27:18.624 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyProject.Models.Student) on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:27:18.819 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Double), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [CreatedAt], [DeletedAt], [GPA], [Grade], [IsDeleted], [Name], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-11-08 08:27:18.843 +08:00 [INF] Executing RedirectResult, redirecting to /Students.
+2024-11-08 08:27:18.844 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 216.4951ms
+2024-11-08 08:27:18.845 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:27:18.846 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7106/Students/Create - 302 0 null 241.9726ms
+2024-11-08 08:27:18.849 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students - null null
+2024-11-08 08:27:18.852 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:27:18.853 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:27:18.863 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:27:18.865 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:27:18.869 +08:00 [INF] Executed ViewResult - view Index executed in 3.9133ms.
+2024-11-08 08:27:18.870 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 15.7743ms
+2024-11-08 08:27:18.871 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:27:18.872 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students - 200 null text/html; charset=utf-8 23.378ms
+2024-11-08 08:27:18.877 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:27:18.877 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:27:18.884 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 6.8709ms
+2024-11-08 08:27:18.890 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.3439ms
+2024-11-08 08:27:25.123 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:27:25.127 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:27:25.128 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:27:25.130 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:27:25.134 +08:00 [INF] Executed ViewResult - view Create executed in 3.5364ms.
+2024-11-08 08:27:25.135 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 5.4041ms
+2024-11-08 08:27:25.137 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:27:25.138 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 14.9993ms
+2024-11-08 08:27:25.140 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:27:25.140 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:27:25.143 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 3.2194ms
+2024-11-08 08:27:25.149 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.0669ms
+2024-11-08 08:28:37.442 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:28:37.550 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:28:37.551 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:28:37.552 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:28:37.553 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:28:37.554 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:28:37.839 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:28:37.896 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:28:37.912 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:28:37.918 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:28:37.961 +08:00 [INF] Executed ViewResult - view Index executed in 43.8084ms.
+2024-11-08 08:28:37.963 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 49.1935ms
+2024-11-08 08:28:37.964 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:28:37.967 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 130.0134ms
+2024-11-08 08:28:37.969 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:28:37.969 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:28:37.976 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 6.7863ms
+2024-11-08 08:28:37.995 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.1266ms
+2024-11-08 08:28:44.802 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:28:44.807 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:28:44.809 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:28:44.936 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:28:44.991 +08:00 [INF] Executed ViewResult - view Create executed in 55.8002ms.
+2024-11-08 08:28:44.995 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 184.6636ms
+2024-11-08 08:28:44.996 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:28:44.997 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:28:44.996 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:28:45.003 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 200.8881ms
+2024-11-08 08:28:45.004 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 7.9698ms
+2024-11-08 08:28:45.011 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.7841ms
+2024-11-08 08:29:02.225 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:29:02.342 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:29:02.343 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:29:02.345 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:29:02.346 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:29:02.346 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:29:02.639 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:29:02.696 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:29:02.715 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:29:02.722 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:29:02.759 +08:00 [INF] Executed ViewResult - view Index executed in 39.446ms.
+2024-11-08 08:29:02.762 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 45.0506ms
+2024-11-08 08:29:02.763 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:29:02.766 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 128.6246ms
+2024-11-08 08:29:02.767 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:29:02.767 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:29:02.774 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 7.229ms
+2024-11-08 08:29:02.790 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.9781ms
+2024-11-08 08:29:06.661 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:29:06.665 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:29:06.667 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:29:06.731 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:29:06.757 +08:00 [INF] Executed ViewResult - view Create executed in 26.8497ms.
+2024-11-08 08:29:06.760 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 90.5951ms
+2024-11-08 08:29:06.761 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:29:06.763 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 102.8541ms
+2024-11-08 08:29:06.764 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:29:06.764 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:29:06.768 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 4.4324ms
+2024-11-08 08:29:06.780 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.8941ms
+2024-11-08 08:29:08.785 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students - null null
+2024-11-08 08:29:08.790 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:29:08.794 +08:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:29:09.249 +08:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[CreatedAt], [s].[DeletedAt], [s].[GPA], [s].[Grade], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-11-08 08:29:09.332 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:29:09.365 +08:00 [INF] Executed ViewResult - view Index executed in 33.8893ms.
+2024-11-08 08:29:09.373 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Index (MyProject) in 576.8835ms
+2024-11-08 08:29:09.374 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Index (MyProject)'
+2024-11-08 08:29:09.375 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:29:09.376 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:29:09.377 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.5913ms
+2024-11-08 08:29:09.382 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students - 200 null text/html; charset=utf-8 597.3838ms
+2024-11-08 08:29:09.387 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.371ms
+2024-11-08 08:29:12.694 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:29:12.700 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:29:12.702 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:29:12.705 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:29:12.714 +08:00 [INF] Executed ViewResult - view Create executed in 8.6542ms.
+2024-11-08 08:29:12.715 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 11.2209ms
+2024-11-08 08:29:12.716 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:29:12.717 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 23.2911ms
+2024-11-08 08:29:12.720 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:29:12.720 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:29:12.722 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.5292ms
+2024-11-08 08:29:12.730 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.8029ms
+2024-11-08 08:30:15.237 +08:00 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-08 08:30:15.354 +08:00 [INF] Now listening on: https://localhost:7106
+2024-11-08 08:30:15.355 +08:00 [INF] Now listening on: http://localhost:5112
+2024-11-08 08:30:15.357 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 08:30:15.358 +08:00 [INF] Hosting environment: Development
+2024-11-08 08:30:15.359 +08:00 [INF] Content root path: C:\Users\Acer\Documents\P E R S O N A L\KVD\MyProject
+2024-11-08 08:30:15.710 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/ - null null
+2024-11-08 08:30:15.765 +08:00 [INF] Executing endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:30:15.783 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyProject.Controllers.HomeController (MyProject).
+2024-11-08 08:30:15.790 +08:00 [INF] Executing ViewResult, running view Index.
+2024-11-08 08:30:15.832 +08:00 [INF] Executed ViewResult - view Index executed in 44.1271ms.
+2024-11-08 08:30:15.834 +08:00 [INF] Executed action MyProject.Controllers.HomeController.Index (MyProject) in 49.0213ms
+2024-11-08 08:30:15.835 +08:00 [INF] Executed endpoint 'MyProject.Controllers.HomeController.Index (MyProject)'
+2024-11-08 08:30:15.838 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/ - 200 null text/html; charset=utf-8 130.0494ms
+2024-11-08 08:30:15.841 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:30:15.841 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:30:15.855 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 14.9662ms
+2024-11-08 08:30:15.868 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.3117ms
+2024-11-08 08:30:20.195 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:30:20.201 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:30:20.203 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:30:20.263 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:30:20.292 +08:00 [INF] Executed ViewResult - view Create executed in 29.4728ms.
+2024-11-08 08:30:20.295 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 90.8803ms
+2024-11-08 08:30:20.296 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:30:20.298 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 102.953ms
+2024-11-08 08:30:20.299 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:30:20.299 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:30:20.302 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.919ms
+2024-11-08 08:30:20.314 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.148ms
+2024-11-08 08:30:22.635 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/Students/Create - null null
+2024-11-08 08:30:22.644 +08:00 [INF] Executing endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:30:22.646 +08:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyProject.Controllers.StudentsController (MyProject).
+2024-11-08 08:30:22.659 +08:00 [INF] Executing ViewResult, running view Create.
+2024-11-08 08:30:22.669 +08:00 [INF] Executed ViewResult - view Create executed in 9.8071ms.
+2024-11-08 08:30:22.671 +08:00 [INF] Executed action MyProject.Controllers.StudentsController.Create (MyProject) in 22.6998ms
+2024-11-08 08:30:22.673 +08:00 [INF] Executed endpoint 'MyProject.Controllers.StudentsController.Create (MyProject)'
+2024-11-08 08:30:22.674 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/Students/Create - 200 null text/html; charset=utf-8 39.6849ms
+2024-11-08 08:30:22.677 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-08 08:30:22.678 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7106/_vs/browserLink - null null
+2024-11-08 08:30:22.680 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_framework/aspnetcore-browser-refresh.js - 200 13753 application/javascript; charset=utf-8 2.671ms
+2024-11-08 08:30:22.687 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7106/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.4898ms
